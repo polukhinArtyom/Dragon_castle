@@ -1,6 +1,6 @@
 print("You are in a dark room in a mysterious castle.")
-print("In front of you are four door. You must choose one.")
-playerChoice = input("Choose 1, 2, 3 or 4...\n")
+print("In front of you are three door. You must choose one.")
+playerChoice = input("Choose 1, 2 or 3...\n")
 if playerChoice == "1":
     print("You find a room full of treasure. You're rich!")
     print("GAME OVER, YOU WIN!")
@@ -12,7 +12,7 @@ elif playerChoice == "3":
     print("You can either:")
     print("1) Try to steel some of the dragon's gold.")
     print("2) Try to sneak around the dragon to the exit.")
-    dragonChoice = input("Type 1 or 2...")
+    dragonChoice = input("Type 1 or 2...\n")
     if dragonChoice == "1":
         print("The dragon wakes up and eats you. You are delicious.")
         print("GAME OVER, YOU LOSE.")
