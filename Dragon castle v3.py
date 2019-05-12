@@ -1,6 +1,7 @@
+import random
 print("You are in a dark room in a mysterious castle.")
 print("In front of you are three door. You must choose one.")
-playerChoice = input("Choose 1, 2 or 3...\n")
+playerChoice = input("Choose 1, 2, 3 or 4...\n")
 if playerChoice == "1":
     print("You find a room full of treasure. You're rich!")
     print("GAME OVER, YOU WIN!")
@@ -21,6 +22,18 @@ elif playerChoice == "3":
         print("GAME OVER, YOU WIN!")
     else:
         print("Sorry, you didn't enter 1 or 2")
+elif playerChoice == "4":
+    print("You enter a room with a sphinx.")
+    print("It asks you to guess what number it is thinking of, between 1 and 10.")
+    number = int(input("What number do you choose?\n"))
+    if number == random.randint(1,10):
+        print("The sphinx hisses in disappointment. You guessed correctly.")
+        print("She must let you go free.")
+        print("GAME OVER. YOU WIN!")
+    else:
+        print("The sphinx tells you that your guess is incorrect.")
+        print("You are now her prisoner forever.")
+        print("GAME OVER, YOU LOSE.")
 else:
-    print("Sorry, you didn't enter 1, 2 or 3!")
+    print("Sorry, you didn't enter 1, 2, 3 or 4!")
     print("Run the game again to have another go.")
