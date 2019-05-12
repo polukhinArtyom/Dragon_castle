@@ -16,11 +16,11 @@ elif playerChoice == "3":
     if dragonChoice == "1":
         print("The dragon wakes up and eats you. You are delicious.")
         print("GAME OVER, YOU LOSE.")
-        elif dragonChoice == "2":
-            print("You sneak around the dragon and escape the castle, blinking in the sunshine.")
-            print("GAME OVER, YOU WIN!")
-        else:
-            print("Sorry, you didn't enter 1 or 2")
+    elif dragonChoice == "2":
+        print("You sneak around the dragon and escape the castle, blinking in the sunshine.")
+        print("GAME OVER, YOU WIN!")
+    else:
+        print("Sorry, you didn't enter 1 or 2")
 else:
     print("Sorry, you didn't enter 1, 2 or 3!")
     print("Run the game again to have another go.")
