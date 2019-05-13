@@ -28,13 +28,15 @@ while exitChoice != "EXIT":
         print("You enter a room with a sphinx.")
         print("It asks you to guess what number it is thinking of, between 1 and 10.")
         number = int(input("What number do you choose?\n"))
-        if number == random.randint(1,10):
+        sphinxRandom = random.randint(1,10)
+        if number == sphinxRandom:
             print("The sphinx hisses in disappointment. You guessed correctly.")
             print("She must let you go free.")
             print("GAME OVER. YOU WIN!")
         else:
             print("The sphinx tells you that your guess is incorrect.")
             print("You are now her prisoner forever.")
+            print("Сфинк загадал число,", a)
             print("GAME OVER, YOU LOSE.")
     else:
         print("Sorry, you didn't enter 1, 2, 3 or 4!")
