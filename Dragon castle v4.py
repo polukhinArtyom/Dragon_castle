@@ -36,7 +36,7 @@ while exitChoice != "EXIT":
         else:
             print("The sphinx tells you that your guess is incorrect.")
             print("You are now her prisoner forever.")
-            print("Сфинк загадал число,", sphinxRandom)
+            print("Сфинкс загадал число,", sphinxRandom)
             print("GAME OVER, YOU LOSE.")
     else:
         print("Sorry, you didn't enter 1, 2, 3 or 4!")
